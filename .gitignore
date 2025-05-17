@@ -1,0 +1,16 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/Domain/Domain/obj
+/Infrastructure/obj/Debug/net9.0
+/Services/obj
+/Test/UnitTest/obj
+/Test/UnitTest/bin/Debug/net9.0
+/Web/obj
+/Infrastructure/obj
+/Services/bin/Debug/net9.0
+/Web/.vs/MvcTemplate
+/Web/bin/Debug/net9.0
+/Domain/Domain/bin/Debug/net9.0
+/Infrastructure/bin/Debug/net9.0
