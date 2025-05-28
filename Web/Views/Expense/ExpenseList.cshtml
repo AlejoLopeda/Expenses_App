@@ -1,0 +1,25 @@
+﻿@model List<Services.Dtos.ExpenseModel>
+<h2>Lista de Gastos</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Categoría</th>
+            <th>Nombre</th>
+            <th>Costo</th>
+            <th>Poder</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Date.ToShortDateString()</td>
+                <td>@item.Category</td>
+                <td>@item.Name</td>
+                <td>@item.Cost.ToString("C")</td>
+                <td>@item.Power</td>
+            </tr>
+        }
+    </tbody>
+</table>

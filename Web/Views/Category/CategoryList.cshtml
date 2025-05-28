@@ -1,0 +1,34 @@
+@model List<Services.Dtos.CategoryModel>
+
+    @{
+    ViewData["Title"] = "Listado de Categorías";
+    }
+
+    <h2>Listado de Categorías</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in Model)
+        {
+            <tr>
+                <td>@category.Name</td>
+                <td>
+                    @if (category.IsActive)
+                    {
+                    <span class="badge bg-success">Activa</span>
+                    }
+                    else
+                    {
+                    <span class="badge bg-danger">Inactiva</span>
+                    }
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
